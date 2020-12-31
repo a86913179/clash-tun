@@ -1,0 +1,46 @@
+ipv6: false
+
+external-controller: 127.0.0.1:9090
+
+dns:
+  enable: true
+  listen: ':53'
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 223.6.6.6
+  enhanced-mode: redir-host
+  nameserver:
+    - https://doh.dns.sb/dns-query
+
+tun:
+  enable: true
+  stack: gvisor
+  dns-hijack:
+    - 198.18.0.2:53
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+
+proxies:
+  - name: SS
+    type: ss
+    server: ss.server.domain
+    port: 8388
+    cipher: aes-256-gcm
+    password: password
+    udp: true
+
+rules:
+  - PROCESS-NAME,qbittorrent.exe,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR6,::1/128,DIRECT
+  - IP-CIDR6,fc00::/7,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - IP-CIDR6,ff00::/8,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,SS
