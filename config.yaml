@@ -5,9 +5,6 @@ external-controller: 127.0.0.1:9090
 dns:
   enable: true
   ipv6: false
-  default-nameserver:
-    - 119.29.29.29
-    - 119.28.28.28
   enhanced-mode: redir-host
   nameserver:
     - https://doh.dns.sb/dns-query
