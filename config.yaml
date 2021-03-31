@@ -2,9 +2,6 @@ ipv6: false
 
 external-controller: 127.0.0.1:9090
 
-profile:
-  store-selected: false
-
 dns:
   enable: true
   ipv6: false
