@@ -16,11 +16,11 @@ dns:
 
 tun:
   enable: true
-  stack: gvisor
+  stack: system
   dns-hijack:
     - 198.18.0.2:53
-  macOS-auto-route: true
-  macOS-auto-detect-interface: true
+  auto-route: true
+  auto-detect-interface: true
 
 proxies:
   - name: SS
