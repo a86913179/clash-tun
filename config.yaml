@@ -8,8 +8,8 @@ dns:
   enable: true
   ipv6: false
   default-nameserver:
-    - 119.29.29.29
-    - 119.28.28.28
+    - 8.8.8.8
+    - 8.8.4.4
   enhanced-mode: redir-host
   nameserver:
     - https://doh.dns.sb/dns-query
