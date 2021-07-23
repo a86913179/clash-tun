@@ -5,4 +5,4 @@
 
 `wintun.dll` from https://www.wintun.net/
 
-Use it with dashboard: http://yacd.haishan.me or http://clash.razord.top
+Use it with dashboard: http://yacd.haishan.me (default) or http://clash.razord.top
