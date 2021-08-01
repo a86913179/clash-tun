@@ -14,7 +14,7 @@ dns:
     - 8.8.4.4
   enhanced-mode: redir-host
   nameserver:
-    - https://doh.dns.sb/dns-query
+    - https://doh.pub/dns-query
 
 tun:
   enable: true
