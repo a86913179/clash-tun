@@ -18,7 +18,7 @@ dns:
 
 tun:
   enable: true
-  stack: system
+  stack: gvisor
   dns-hijack:
     - 198.18.0.2:53
   auto-route: true
