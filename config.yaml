@@ -12,13 +12,15 @@ dns:
   default-nameserver:
     - 8.8.8.8
     - 8.8.4.4
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - '*.lan'
   nameserver:
     - https://doh.pub/dns-query
 
 tun:
   enable: true
-  stack: gvisor
+  stack: system
   dns-hijack:
     - 198.18.0.2:53
   auto-route: true
