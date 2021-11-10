@@ -14,5 +14,6 @@ for /f "delims=," %%a in ('Getmac /v /nh /fo csv') do (
 )
 
 ipconfig /renew6
+ipconfig /renew
 
 ipconfig /flushdns
