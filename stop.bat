@@ -13,7 +13,8 @@ for /f "delims=," %%a in ('Getmac /v /nh /fo csv') do (
   netsh interface ipv6 set interface %%a routerdiscovery=enabled
 )
 
-ipconfig /renew6
 ipconfig /renew
+
+ipconfig /renew6
 
 ipconfig /flushdns
