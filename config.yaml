@@ -8,6 +8,9 @@ external-controller: 127.0.0.1:9090
 
 external-ui: dashboard
 
+hosts:
+  'localhost': 127.0.0.1
+
 dns:
   enable: true
   ipv6: false
