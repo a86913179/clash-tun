@@ -15,7 +15,7 @@ ipconfig /release6
 
 start clash.vbs
 
-timeout /t 5 > nul
+timeout /t 5 /nobreak > nul
 
 ipconfig /renew
 

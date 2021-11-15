@@ -15,7 +15,7 @@ for /f "delims=," %%a in ('Getmac /v /nh /fo csv') do (
 
 ipconfig /renew6
 
-timeout /t 5 > nul
+timeout /t 5 /nobreak > nul
 
 ipconfig /renew
 
