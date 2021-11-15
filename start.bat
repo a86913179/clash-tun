@@ -11,10 +11,12 @@ for /f "delims=," %%a in ('Getmac /v /nh /fo csv') do (
   netsh interface ipv6 set interface %%a routerdiscovery=disabled
 )
 
+ipconfig /release6
+
 start clash.vbs
 
-ipconfig /renew
+timeout /t 5 > nul
 
-ipconfig /release6
+ipconfig /renew
 
 ipconfig /flushdns
