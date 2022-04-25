@@ -15,6 +15,4 @@ ipconfig /renew6
 
 taskkill /f /im clash.exe /t
 
-ipconfig /renew
-
 ipconfig /flushdns
