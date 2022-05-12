@@ -47,7 +47,12 @@ proxy-groups:
     proxies:
       - SS
 
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
+
 rules:
+  - SCRIPT,quic,REJECT
   - PROCESS-NAME,qbittorrent.exe,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
