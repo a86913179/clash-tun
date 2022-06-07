@@ -14,6 +14,9 @@ hosts:
 dns:
   enable: true
   ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 223.6.6.6
   enhanced-mode: fake-ip
   fake-ip-filter:
     - '*.lan'
