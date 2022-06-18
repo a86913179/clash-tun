@@ -21,7 +21,8 @@ dns:
   fake-ip-filter:
     - '*.lan'
   nameserver:
-    - https://dns.alidns.com/dns-query
+    - 223.5.5.5
+    - 223.6.6.6
 
 tun:
   enable: true
