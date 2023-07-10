@@ -21,8 +21,8 @@ dns:
   fake-ip-filter:
     - '*.lan'
   nameserver:
-    - 223.5.5.5
-    - 223.6.6.6
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
 
 tun:
   enable: true
@@ -33,11 +33,10 @@ tun:
   auto-detect-interface: true
 
 proxies:
-  - name: SS
-    type: ss
-    server: ss.server.domain
-    port: 8388
-    cipher: aes-256-gcm
+  - name: TROJAN
+    type: trojan
+    server: trojan.server.domain
+    port: 443
     password: password
     udp: true
 
@@ -45,15 +44,15 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - SS
+      - TROJAN
 
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
 
 rules:
-  - SCRIPT,quic,REJECT
   - PROCESS-NAME,qbittorrent.exe,DIRECT
+  - SCRIPT,quic,REJECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,PROXY
