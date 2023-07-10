@@ -1,9 +1,9 @@
 # clash-tun
-`clash.exe` from [clash(premium)](https://github.com/Dreamacro/clash/releases/tag/premium)
+`clash.exe` is downloaded from [clash(premium)](https://github.com/Dreamacro/clash/releases/tag/premium)
 
-`Country.mmdb` from [Country-only-cn-private.mmdb](https://github.com/Loyalsoldier/geoip/blob/release/Country-only-cn-private.mmdb) If you are not using `GEOIP,CN` only, you can download full `Country.mmdb` from [Country.mmdb](https://github.com/Loyalsoldier/geoip/blob/release/Country.mmdb)
+`Country.mmdb` is downloaded from [Country-only-cn-private.mmdb](https://github.com/Loyalsoldier/geoip/blob/release/Country-only-cn-private.mmdb) If you are not using `GEOIP,CN` only, you can download full `Country.mmdb` from [Country.mmdb](https://github.com/Loyalsoldier/geoip/blob/release/Country.mmdb)
 
-`wintun.dll` from [wintun](https://www.wintun.net)
+`wintun.dll` is downloaded from [wintun](https://www.wintun.net)
 
 Use it with dashboard: http://yacd.haishan.me from [yacd](https://github.com/haishanh/yacd) (Default for this repo, access it with http://127.0.0.1:9090/ui)
 
