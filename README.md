@@ -5,6 +5,6 @@
 
 `wintun.dll` is downloaded from [wintun](https://www.wintun.net)
 
-Use clash with dashboard: http://yacd.haishan.me from [yacd](https://github.com/haishanh/yacd) (Which is default WEBUI for this repo, access http://127.0.0.1:9090/ui to use it)
+Use clash with dashboard: http://yacd.haishan.me from [yacd](https://github.com/haishanh/yacd) (Which is default WEBUI for this repo, by accessing http://127.0.0.1:9090/ui to use it)
 
 or http://clash.razord.top from [clash-dashboard](https://github.com/Dreamacro/clash-dashboard)
